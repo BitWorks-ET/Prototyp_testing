@@ -1,0 +1,85 @@
+﻿@page "/Login"
+
+@using BCrypt.Net
+@using Blazored.SessionStorage
+@using Prototype.HelperClasses
+@inject NavigationManager Navigation
+@inject ISessionStorageService SessionStorage
+
+
+<PageTitle>Anmelden</PageTitle>
+
+<h3>Login</h3>
+<p>Melden Sie sich mit einem existierenden Benutzer an, oder erstellen Sie einen neuen Account</p>
+
+<label for="nameOrMail">E-Mail:</label>
+<InputText id="nameOrMail" @bind-Value="eMail" class="form-control"/>
+
+<label for="password">Passwort:</label>
+<InputText id="password" type="password" @bind-Value="password" class="form-control" />
+
+<button @onclick="tryToLogin">Anmelden</button>
+
+<p>Noch keinen Account?:</p>
+<NavLink href="/Register" class="btn btn-primary">
+	Neuen Account erstellen
+</NavLink>
+
+@if (popupVisible)
+{
+    <div class="popup-overlay bg-danger bg-opacity-10">
+        <div class="popup-box">
+            <p>@popupMessage</p>
+            <button @onclick="() => popupVisible = false">Schließen</button>
+        </div>
+    </div>
+}
+
+
+
+@code {
+    private String? eMail; // Hier darf nur die Mail rein
+    private String? password;
+
+    private bool popupVisible = false;
+    private String popupMessage = "";
+
+
+    private async Task tryToLogin()
+    {
+        if (validateData())
+        {
+            if (await LoginHelper.LogInUser(eMail, password, SessionStorage))
+            {
+                Navigation.NavigateTo("/");
+            }
+            else
+            {
+                popupMessage = "Das Passwort ist falsch.";
+                popupVisible = true;
+            }
+	    }
+        else
+        {
+            popupVisible = true;
+        }
+    }
+
+
+    private bool validateData()
+    {
+	    if (eMail == null)
+	    {
+            popupMessage = "Bitte geben Sie einen Nutzername ein.";
+		    return false;
+	    }
+
+	    if (password == null)
+	    {
+            popupMessage = "Bitte geben Sie ein Passwort ein.";
+		    return false;
+	    }
+
+	    return true;
+    }
+}
