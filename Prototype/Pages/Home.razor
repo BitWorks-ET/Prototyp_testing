@@ -1,0 +1,82 @@
+﻿@page "/"
+
+@using Blazored.SessionStorage
+@using Prototype.HelperClasses
+@using Prototype.Models
+@inject NavigationManager Navigation
+@inject ISessionStorageService SessionStorage
+
+
+<PageTitle>Übersicht</PageTitle>
+
+<h1>Willkommen, UserName!</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Datum</th>
+            <th>Anmelden</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var TestEvent in eventList)
+        {
+            <tr>
+                <td><a href="@($"/Event/{TestEvent.name}")">@TestEvent.name</a></td>
+                <td>@TestEvent.date</td>
+                <td><button @onclick="() => SignUserUp(TestEvent.name)">Anmelden</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (userIsOrga)
+{
+    <div class="d-flex">
+        <NavLink href="$/EventAdministration" class="btn btn-primary">
+            Neues Event Erstellen
+        </NavLink>
+        <NavLink href="/manageOrganisation" class="btn btn-primary">
+            Organisation Verwalten
+        </NavLink>
+        <NavLink href="/processSuite" class="btn btn-primary">
+            Prozesse Erstellen
+        </NavLink>
+    </div>
+}
+
+@code{
+    public bool userIsOrga = true;
+    public class TestEvent
+    {
+        public string name { get; set; }
+        public DateTime date { get; set; }
+    }
+
+    private List<TestEvent> eventList = new()
+    {
+        new TestEvent { name = "Grillfest", date = new DateTime(2025, 5, 13)},
+        new TestEvent { name = "Important Meeting", date = new DateTime(2026, 5, 13)},
+        new TestEvent { name = "Sommerfest", date = new DateTime(2025, 5, 14)}
+    };
+
+    private bool isLoggedIn;
+    private string? username;
+
+    protected override async Task OnInitializedAsync()
+    {
+	    isLoggedIn = await SessionStorage.GetItemAsync<bool>("isLoggedIn");
+	    username = await SessionStorage.GetItemAsync<string>("username");
+        if (!isLoggedIn)
+        {
+            Navigation.NavigateTo("/Login");
+        }
+    }
+
+    private void SignUserUp(String name)
+    {
+        //da wir die anmeldeseite noch nicht brauchen, kommt hier die anmeldung rein
+        //Navigation.NavigateTo($"/EventSignUp/{name}");
+    }
+}
