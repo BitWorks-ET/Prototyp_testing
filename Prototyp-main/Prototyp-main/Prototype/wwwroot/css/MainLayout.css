@@ -1,0 +1,51 @@
+﻿
+/* Allgemeine Layout-Einstellungen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container für die Seite */
+div {
+    box-sizing: border-box;
+}
+
+/* Menüleiste */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* Navigationslinks */
+    nav div {
+        margin-right: 1rem;
+    }
+
+    nav a, nav NavLink {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        nav a:hover, nav NavLink:hover {
+            background-color: #555;
+        }
+
+/* Hauptinhalt */
+main {
+    padding: 2rem;
+}
+
+article {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,56 @@
+﻿@using Blazored.SessionStorage
+@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+@inject ISessionStorageService SessionStorage
+
+
+
+<link href="css/MainLayout.css" rel="stylesheet" />
+
+<div>
+	
+	<!--Menüleiste-->
+	<div>
+		<nav>
+
+			<!--Home Button-->
+			<div>
+				<NavLink href="" Match="NavLinkMatch.All">
+					Home
+				</NavLink>
+			</div>
+
+			<!--Abmelden Button-->
+			@if (isLoggedIn)
+			{
+				<div>
+					<NavLink href="/Login">
+						Abmelden
+					</NavLink>
+				</div>
+			}
+		</nav>
+	</div>
+	
+	<!--Main Page-->
+	<main>
+		<article>
+			@Body
+		</article>
+	</main>
+</div>
+
+
+
+@code {
+	private bool isLoggedIn = false;
+
+
+	// Dies wird aufgerufen, wenn sich die URL ändert und die Seite gerendert werden muss
+	// Brauchen wir, damit der AbmeldeButton erscheint
+	protected override async Task OnParametersSetAsync()
+	{
+		isLoggedIn = await SessionStorage.GetItemAsync<bool>("isLoggedIn");
+		StateHasChanged();
+	}
+}

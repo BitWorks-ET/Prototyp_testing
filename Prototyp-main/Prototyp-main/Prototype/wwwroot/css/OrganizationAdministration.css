@@ -1,0 +1,113 @@
+﻿/* Grundlayout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    padding: 2rem;
+    color: #333;
+}
+
+/* Überschriften */
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+h4 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Paragraphen */
+p {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Eingabefelder */
+input[type="text"],
+.form-control {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+/* Tabelle */
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #374151;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Buttons */
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/* Entfernen-Button */
+td button {
+    background-color: #dc3545;
+    color: white;
+}
+
+    td button:hover {
+        background-color: #c82333;
+    }
+
+/* Sektion zum Organisator-Hinzufügen */
+div > h3 + div {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #eef6ff;
+    border: 1px solid #cce1ff;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+    div > h3 + div input {
+        margin-right: 1rem;
+        width: calc(100% - 140px);
+        display: inline-block;
+    }
+
+    div > h3 + div button {
+        margin-top: 0;
+    }

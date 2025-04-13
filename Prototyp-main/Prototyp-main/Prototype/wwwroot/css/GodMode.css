@@ -1,0 +1,67 @@
+﻿/* Allgemeines Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    padding: 2rem;
+    color: #333;
+}
+
+/* Überschrift */
+h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+/* Eingabebereich */
+div {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Eingabefelder */
+input[type="text"],
+.form-control {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    transition: border-color 0.3s;
+}
+
+    input:focus,
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+/* Button */
+button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }

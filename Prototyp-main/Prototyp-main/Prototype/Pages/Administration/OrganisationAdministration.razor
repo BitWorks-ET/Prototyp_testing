@@ -1,0 +1,127 @@
+﻿@page "/manageOrganisation"
+
+@using Blazored.SessionStorage
+@using Prototype.Models
+@using Prototype.Models.Rights
+@inject NavigationManager Navigation
+@inject ISessionStorageService SessionStorage
+
+
+
+<link href="css/OrganizationAdministration.css" rel="stylesheet" />
+
+<PageTitle>Organisationsübersicht</PageTitle>
+
+<h3>Organisationsübersicht</h3>
+<p>Hier haben Sie eine Übersicht über Ihre Organisation.</p>
+
+
+<!--Überschrift-->
+<div>
+	<h3>@currentOrg.Name</h3>
+</div>
+
+<!--Alle wichtigen Informationen über die Organisation-->
+<div>
+	<div>
+		<p class="fw-bold">Informationen über die Organisation: </p>
+		<InputTextArea @bind-Value="currentOrg.Description" class="form-control" />
+	</div>
+
+	<div>
+		<p class="fw-bold">Domain der Organisation: </p>
+		<p>@currentOrg.Domain</p>
+	</div>
+</div>
+
+<div>
+	<!--Liste zu verwalten der Organisatoren-->
+	<div>
+		<h4>Liste der Organisatoren</h4>
+		<table>
+			<thead>
+			<tr>
+				<th>Vorname</th>
+				<th>Nachname</th>
+				<th>E-Mail</th>
+				<th>Entfernen</th>
+			</tr>
+			</thead>
+			<tbody>
+			@foreach (var organizer in currentOrg.OrgAdmins)
+			{
+				<tr>
+					<td>@organizer.FirstName</td>
+					<td>@organizer.LastName</td>
+					<td>@organizer.eMail</td>
+					<td><button @onclick="() => RemoveOrganizer(organizer)">Entfernen</button></td>
+				</tr>
+			}
+			</tbody>
+		</table>
+	</div>
+
+	<!--Box zum hinzufügen eines neuen Organiastors-->
+	<div>
+		<h3>Organisator hinzufügen:</h3>
+		<div>
+			<p>E-Mail des Mitarbeiters</p>
+			<InputText id="nameOrMail" @bind-Value="addMail"/>
+			<button @onclick="AddOrganizer">Organisator hinzufügen</button>
+		</div>
+	</div>
+</div>
+
+
+
+@code {
+	private bool isLoggedIn;
+	private Person currentUser;
+	private string rightsType;
+	private Rights authority = new Member();
+	
+
+	// Überprüfung, ob der Nutzer angemeldet ist
+	// Zuweisung der angemeldeten Person mit all ihren Rechten
+	protected override async Task OnInitializedAsync()
+	{
+		isLoggedIn = await SessionStorage.GetItemAsync<bool>("isLoggedIn");
+		if (!isLoggedIn)
+		{
+			Navigation.NavigateTo("/Login");
+			return;
+		}
+		currentUser = await SessionStorage.GetItemAsync<Person>("user");
+		rightsType = await SessionStorage.GetItemAsStringAsync("rightsType");
+		if (rightsType == "Member")
+		{
+			authority = await SessionStorage.GetItemAsync<Member>("rights"); 
+		}
+		else if (rightsType == "Organizer")
+		{
+			authority = await SessionStorage.GetItemAsync<Organizer>("rights");
+		}
+
+		// Anhand des Organisators bestimmen, welche Orga er bearbeiten kann
+		currentOrg = Application.Instance.GetOrganization(currentUser.OrganizationId);
+	}
+
+
+	private Organization currentOrg = new Organization("", new Person("", ""));
+	// Nutzter Input
+    private string addMail;
+
+
+	// Die E-Mail Addresse als Organisator hinzufügen
+    private void AddOrganizer()
+    {
+        currentOrg.OrgAdmins.Add(Application.Instance.GetPerson(addMail));
+    }
+
+
+	// Entfernt den Organisator
+    private async void RemoveOrganizer(Person person)
+    {
+	    currentOrg.OrgAdmins.Remove(person);
+    }
+}
