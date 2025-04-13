@@ -1,0 +1,47 @@
+﻿@page "/processSuite"
+
+<h3>Prozesse Übersicht</h3>
+
+<div>
+    <h4>Existierende Prozesse</h4>
+    <table class="table">
+            <thead>
+                <tr>
+                    <th>Hinzufügen</th>
+                    <th>Prozessname</th>
+                    <th>Funktion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var TestProcess in processList)
+                {
+                    <tr>
+                        <button @onclick="() => AddProcessToEvent(TestProcess)">Hinzufügen</button>
+                        <td>@TestProcess.name</td>
+                        <td>@TestProcess.tasks</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+
+@code {
+    public class TestProcess
+    {
+        public string? name;
+        public string? tasks;
+        public bool isDone;
+    }
+
+    private List<TestProcess> processList = new()
+    {
+        new TestProcess { name = "Einladungen vorbereiten", tasks = "Einladungen für automatischen Versand erstellen"},
+        new TestProcess { name = "Ort reservieren", tasks = "Reservieren des ORtes für den entsprechenden Zeitraum"},
+        new TestProcess { name = "Begleitpersonen erfassen", tasks = "versenden von E-Mails, um die Anzahl der Begleitpersonen zu erfahren"}
+    };
+
+    public void AddProcessToEvent(TestProcess process)
+    {
+        //hinzufügen des Prozesses zum Event -> maybe noch das Event der Seite mitgeben?
+    }
+}

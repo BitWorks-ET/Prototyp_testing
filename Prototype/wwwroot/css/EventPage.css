@@ -1,0 +1,95 @@
+﻿/* Basislayout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 1.5rem;
+    color: #333;
+}
+
+/* Überschrift */
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Eventinformationen */
+.event-info-section p:first-child {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    color: #444;
+}
+
+.event-info-section p + p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* An-/Abmeldebuttons */
+button {
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button.subscribe {
+        background-color: #28a745;
+        color: white;
+    }
+
+        button.subscribe:hover {
+            background-color: #218838;
+        }
+
+    button.unsubscribe {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        button.unsubscribe:hover {
+            background-color: #c82333;
+        }
+
+/* Organisatoren-Suite */
+.organizer-suite {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #eef6ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 8px;
+}
+
+    /* Links in der Suite */
+    .organizer-suite a {
+        display: inline-block;
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .organizer-suite a:hover {
+            background-color: #0056b3;
+        }
+
+    /* Löschen-Button */
+    .organizer-suite button.delete {
+        margin-top: 1rem;
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .organizer-suite button.delete:hover {
+            background-color: #c82333;
+        }

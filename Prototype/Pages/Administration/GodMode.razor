@@ -1,0 +1,47 @@
+﻿@page "/godMode"
+
+@using BCrypt.Net
+@using Prototype.Models
+
+
+
+<link href="css/GodMode.css" rel="stylesheet" />
+
+<h3>GodMode</h3>
+
+<!--Textfelder zum hinzufügen einer Organisation-->
+<div>
+	<label>Organisationsname: </label>
+	<InputText @bind-Value="orgName" placeholder="" class="form-control" />
+
+	<label>Domain: </label>
+	<InputText @bind-Value="orgDomain" placeholder="" class="form-control" />
+
+	<label>First Admin: </label>
+	<InputText @bind-Value="eMail" placeholder="" class="form-control" />
+
+	<button @onclick="AddOrganization">Organisation Hinzufügen</button>
+</div>
+
+
+
+
+@code {
+	private string orgName;
+	private string orgDomain;
+	private string eMail;
+
+	protected override async Task OnInitializedAsync()
+	{
+		// TODO: Rechte Checken
+	}
+
+
+	// Fügt neue Organisation mit den eingetragenen Werten hinzu
+	private void AddOrganization()
+	{
+		Organization newOrg = new Organization(orgName, Application.Instance.GetPerson(eMail));
+		newOrg.Domain = orgDomain;
+		Application.Instance.AddOrganization(newOrg);
+	}
+}
