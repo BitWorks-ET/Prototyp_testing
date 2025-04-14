@@ -13,6 +13,7 @@ public class ApplicationTests
         app.AddOrganization(org);
         Assert.Contains(org, app.GetOrganizations());
     }
+    // TEST KOMMENTAR OKOMOMO
 
     [Fact]
     public void RemoveOrganization_ShouldRemoveOrg()
