@@ -1,0 +1,17 @@
+# Build-Verzeichnisse
+bin/
+obj/
+.vs/
+*.suo
+
+# Visual Studio
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS-Spezifisch
+Thumbs.db
+.DS_Store
+
+# Sonstiger Kram
+*.sqlite
