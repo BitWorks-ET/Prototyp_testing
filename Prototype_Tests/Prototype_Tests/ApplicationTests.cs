@@ -14,6 +14,8 @@ public class ApplicationTests
         Assert.Contains(org, app.GetOrganizations());
     }
 
+    // Test dies ist ein Kommentar der gepusht werden soll und Tests auslösen soll
+    
     [Fact]
     public void RemoveOrganization_ShouldRemoveOrg()
     {
