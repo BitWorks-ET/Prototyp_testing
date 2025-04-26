@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7356285e-8bcd-4547-a666-98c831afea2f" name="Administrator@RECHNER 2025-04-26 13:25:24" runUser="RECHNER\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-04-26T13:25:24.3696388+02:00" queuing="2025-04-26T13:25:24.3696393+02:00" start="2025-04-26T13:25:22.5876349+02:00" finish="2025-04-26T13:25:49.0406415+02:00" />
+  <TestSettings name="default" id="91bba25c-1004-49be-a0ec-e93948db89c5">
+    <Deployment runDeploymentRoot="Administrator_RECHNER_2025-04-26_13_25_24" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="69912b78-c02b-4229-a738-2532e952e7ec" testId="5986bf34-9eaf-1dc4-5fb6-69a40054735c" testName="ApplicationTests.GetEvent_ById_ShouldReturnCorrectEvent" computerName="RECHNER" duration="00:00:00.0015983" startTime="2025-04-26T13:25:23.2191991+02:00" endTime="2025-04-26T13:25:23.2191991+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69912b78-c02b-4229-a738-2532e952e7ec" />
+    <UnitTestResult executionId="f0af49de-3a30-4235-a405-18b4971f2b91" testId="900cc8a6-4bf7-99b9-8f40-f7065ef0fbea" testName="LoginPageTest.Should_Login_With_Valid_Credentials" computerName="RECHNER" duration="00:00:03.5981807" startTime="2025-04-26T13:25:26.5547056+02:00" endTime="2025-04-26T13:25:26.5547060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0af49de-3a30-4235-a405-18b4971f2b91" />
+    <UnitTestResult executionId="bdcb6c51-e4d8-4f22-9819-74bc9e590c15" testId="b8dd5df3-f5c9-7481-54ae-062012555a77" testName="Prototype_Tests.UiTests.AdminCreatesNewEventTest.Admin_Can_Create_And_Register_For_Event" computerName="RECHNER" duration="00:00:15.6249129" startTime="2025-04-26T13:25:38.5798789+02:00" endTime="2025-04-26T13:25:38.5798791+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bdcb6c51-e4d8-4f22-9819-74bc9e590c15" />
+    <UnitTestResult executionId="a7880fa2-fe8e-4655-99e4-d8a453b4357f" testId="5dd3ce82-7fe2-b2c0-d150-da1c4a60b0d8" testName="ApplicationTests.RemoveOrganization_ShouldRemoveOrg" computerName="RECHNER" duration="00:00:00.0012793" startTime="2025-04-26T13:25:23.2188948+02:00" endTime="2025-04-26T13:25:23.2188949+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7880fa2-fe8e-4655-99e4-d8a453b4357f" />
+    <UnitTestResult executionId="1f022fbe-06d7-4a02-a948-6f72d7a4689d" testId="fd1a6084-6b53-8f70-3d55-af11665b025c" testName="Prototype_Tests.UiTests.AdminCreatesNewEventTest.Admin_Can_Create_New_Event_With_Testort" computerName="RECHNER" duration="00:00:10.4200786" startTime="2025-04-26T13:25:49.0001668+02:00" endTime="2025-04-26T13:25:49.0001670+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f022fbe-06d7-4a02-a948-6f72d7a4689d" />
+    <UnitTestResult executionId="e74e4331-810e-4ea0-b7ea-28a154dc4313" testId="447d5e02-f52b-b181-9893-ae533375c43b" testName="Prototype_Tests.UiTests.Should_Login_With_Admin.Should_Login_Successfully" computerName="RECHNER" duration="00:00:11.9911177" startTime="2025-04-26T13:25:34.9460962+02:00" endTime="2025-04-26T13:25:34.9460965+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e74e4331-810e-4ea0-b7ea-28a154dc4313" />
+    <UnitTestResult executionId="74aaed1e-a4d2-4a69-a009-dec672a32260" testId="ef9a8ffb-7930-d45a-6c3b-9d40b54d7a0b" testName="ApplicationTests.AddEvent_ShouldAddEventToList" computerName="RECHNER" duration="00:00:00.2597492" startTime="2025-04-26T13:25:23.2167732+02:00" endTime="2025-04-26T13:25:23.2167860+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74aaed1e-a4d2-4a69-a009-dec672a32260" />
+    <UnitTestResult executionId="18e0ef1f-c2b4-458f-a9fe-e60d4814028b" testId="18cd3410-5232-4d0e-c3fd-d80551feb8f0" testName="ApplicationTests.AddOrganization_ShouldAddNewOrg" computerName="RECHNER" duration="00:00:00.0001611" startTime="2025-04-26T13:25:23.2193949+02:00" endTime="2025-04-26T13:25:23.2193949+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18e0ef1f-c2b4-458f-a9fe-e60d4814028b" />
+    <UnitTestResult executionId="3726b20b-00f5-4f5e-985a-dad90fc813f1" testId="a5a914c7-e9e7-ef63-53f2-bd65225910a6" testName="ApplicationTests.GetPerson_ByEmail_ShouldReturnCorrectUser" computerName="RECHNER" duration="00:00:00.0004735" startTime="2025-04-26T13:25:23.2199112+02:00" endTime="2025-04-26T13:25:23.2199113+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3726b20b-00f5-4f5e-985a-dad90fc813f1" />
+    <UnitTestResult executionId="f7103f5e-83ba-4355-9cab-9135d2a52cc9" testId="6c54c414-04fa-8948-b616-3928486632a5" testName="ApplicationTests.AddMember_ShouldAddPerson" computerName="RECHNER" duration="00:00:00.0003435" startTime="2025-04-26T13:25:23.2202857+02:00" endTime="2025-04-26T13:25:23.2202858+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7103f5e-83ba-4355-9cab-9135d2a52cc9" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Prototype_Tests.UiTests.Should_Login_With_Admin.Should_Login_Successfully" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="447d5e02-f52b-b181-9893-ae533375c43b">
+      <Execution id="e74e4331-810e-4ea0-b7ea-28a154dc4313" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Prototype_Tests.UiTests.Should_Login_With_Admin" name="Should_Login_Successfully" />
+    </UnitTest>
+    <UnitTest name="LoginPageTest.Should_Login_With_Valid_Credentials" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="900cc8a6-4bf7-99b9-8f40-f7065ef0fbea">
+      <Execution id="f0af49de-3a30-4235-a405-18b4971f2b91" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginPageTest" name="Should_Login_With_Valid_Credentials" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.GetPerson_ByEmail_ShouldReturnCorrectUser" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="a5a914c7-e9e7-ef63-53f2-bd65225910a6">
+      <Execution id="3726b20b-00f5-4f5e-985a-dad90fc813f1" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="GetPerson_ByEmail_ShouldReturnCorrectUser" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.RemoveOrganization_ShouldRemoveOrg" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="5dd3ce82-7fe2-b2c0-d150-da1c4a60b0d8">
+      <Execution id="a7880fa2-fe8e-4655-99e4-d8a453b4357f" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="RemoveOrganization_ShouldRemoveOrg" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.AddOrganization_ShouldAddNewOrg" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="18cd3410-5232-4d0e-c3fd-d80551feb8f0">
+      <Execution id="18e0ef1f-c2b4-458f-a9fe-e60d4814028b" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="AddOrganization_ShouldAddNewOrg" />
+    </UnitTest>
+    <UnitTest name="Prototype_Tests.UiTests.AdminCreatesNewEventTest.Admin_Can_Create_And_Register_For_Event" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="b8dd5df3-f5c9-7481-54ae-062012555a77">
+      <Execution id="bdcb6c51-e4d8-4f22-9819-74bc9e590c15" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Prototype_Tests.UiTests.AdminCreatesNewEventTest" name="Admin_Can_Create_And_Register_For_Event" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.GetEvent_ById_ShouldReturnCorrectEvent" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="5986bf34-9eaf-1dc4-5fb6-69a40054735c">
+      <Execution id="69912b78-c02b-4229-a738-2532e952e7ec" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="GetEvent_ById_ShouldReturnCorrectEvent" />
+    </UnitTest>
+    <UnitTest name="Prototype_Tests.UiTests.AdminCreatesNewEventTest.Admin_Can_Create_New_Event_With_Testort" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="fd1a6084-6b53-8f70-3d55-af11665b025c">
+      <Execution id="1f022fbe-06d7-4a02-a948-6f72d7a4689d" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Prototype_Tests.UiTests.AdminCreatesNewEventTest" name="Admin_Can_Create_New_Event_With_Testort" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.AddMember_ShouldAddPerson" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="6c54c414-04fa-8948-b616-3928486632a5">
+      <Execution id="f7103f5e-83ba-4355-9cab-9135d2a52cc9" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="AddMember_ShouldAddPerson" />
+    </UnitTest>
+    <UnitTest name="ApplicationTests.AddEvent_ShouldAddEventToList" storage="c:\users\administrator\source\repos\prototyp_testing\prototype_tests\prototype_tests\bin\debug\net8.0\prototype_tests.dll" id="ef9a8ffb-7930-d45a-6c3b-9d40b54d7a0b">
+      <Execution id="74aaed1e-a4d2-4a69-a009-dec672a32260" />
+      <TestMethod codeBase="C:\Users\Administrator\source\repos\Prototyp_testing\Prototype_Tests\Prototype_Tests\bin\Debug\net8.0\Prototype_Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ApplicationTests" name="AddEvent_ShouldAddEventToList" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5986bf34-9eaf-1dc4-5fb6-69a40054735c" executionId="69912b78-c02b-4229-a738-2532e952e7ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="900cc8a6-4bf7-99b9-8f40-f7065ef0fbea" executionId="f0af49de-3a30-4235-a405-18b4971f2b91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8dd5df3-f5c9-7481-54ae-062012555a77" executionId="bdcb6c51-e4d8-4f22-9819-74bc9e590c15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5dd3ce82-7fe2-b2c0-d150-da1c4a60b0d8" executionId="a7880fa2-fe8e-4655-99e4-d8a453b4357f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd1a6084-6b53-8f70-3d55-af11665b025c" executionId="1f022fbe-06d7-4a02-a948-6f72d7a4689d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="447d5e02-f52b-b181-9893-ae533375c43b" executionId="e74e4331-810e-4ea0-b7ea-28a154dc4313" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef9a8ffb-7930-d45a-6c3b-9d40b54d7a0b" executionId="74aaed1e-a4d2-4a69-a009-dec672a32260" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18cd3410-5232-4d0e-c3fd-d80551feb8f0" executionId="18e0ef1f-c2b4-458f-a9fe-e60d4814028b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a5a914c7-e9e7-ef63-53f2-bd65225910a6" executionId="3726b20b-00f5-4f5e-985a-dad90fc813f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c54c414-04fa-8948-b616-3928486632a5" executionId="f7103f5e-83ba-4355-9cab-9135d2a52cc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Ergebnisse nicht in einer Liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Alle geladenen Ergebnisse" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.15)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: Prototype_Tests&#xD;
+[xUnit.net 00:00:00.07]   Discovered:  Prototype_Tests&#xD;
+[xUnit.net 00:00:00.07]   Starting:    Prototype_Tests&#xD;
+Aktuelle URL: https://localhost:7084/Login&#xD;
+Test fertig, Browser bleibt offen. Dr�cke Enter zum Schlie�en...&#xD;
+&lt;!DOCTYPE html&gt;&lt;html lang="en" style="--blazor-load-percentage: 100%; --blazor-load-percentage-text: &amp;quot;100%&amp;quot;;"&gt;&lt;head&gt;&#xD;
+    &lt;meta charset="utf-8"&gt;&#xD;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;&#xD;
+    &lt;base href="/"&gt;&#xD;
+    &lt;link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"&gt;&#xD;
+    &lt;link rel="stylesheet" href="css/app.css"&gt;&#xD;
+    &lt;link rel="icon" type="image/png" href="favicon.png"&gt;&#xD;
+    &lt;link href="Prototype.styles.css" rel="stylesheet"&gt;&#xD;
+&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;title&gt;Eventbearbeitung&lt;/title&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;/head&gt;&#xD;
+&lt;body&gt;&#xD;
+    &lt;div id="app"&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;link href="css/MainLayout.css" rel="stylesheet" b-uf1ib2deui=""&gt;&#xD;
+&lt;div b-uf1ib2deui=""&gt;&lt;div b-uf1ib2deui=""&gt;&lt;nav b-uf1ib2deui=""&gt;&lt;div b-uf1ib2deui=""&gt;&lt;!--!--&gt;&lt;a href=""&gt;&lt;!--!--&gt;&#xD;
+					Home&#xD;
+				&lt;/a&gt;&lt;/div&gt;&lt;div b-uf1ib2deui=""&gt;&lt;!--!--&gt;&lt;a href="/Login"&gt;&lt;!--!--&gt;&#xD;
+						Abmelden&#xD;
+					&lt;/a&gt;&lt;/div&gt;&lt;/nav&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+	&lt;main b-uf1ib2deui=""&gt;&lt;article b-uf1ib2deui=""&gt;&lt;!--!--&gt;&lt;!--!--&gt;&lt;link href="css/EventAdministration.css" rel="stylesheet"&gt;&#xD;
+&lt;!--!--&gt;&lt;!--!--&gt;&lt;!--!--&gt;&#xD;
+&lt;div&gt;&lt;h3&gt;&lt;!--!--&gt;&lt;textarea class="form-control" _bl_4=""&gt;&lt;/textarea&gt;&lt;/h3&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+&lt;div&gt;&lt;div&gt;&lt;!--!--&gt;&lt;p&gt;Informationen �ber das Event: &lt;/p&gt;&#xD;
+        &lt;!--!--&gt;&lt;textarea class="form-control" _bl_5=""&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+    &lt;div&gt;&lt;!--!--&gt;&lt;p&gt;Datum des Events: &lt;/p&gt;&#xD;
+        &lt;!--!--&gt;&lt;input id="birthday" type="date" class="form-control" _bl_6=""&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+    &lt;div&gt;&lt;!--!--&gt;&lt;p&gt;Uhrzeit: &lt;/p&gt;&#xD;
+        &lt;input type="time" class="form-control"&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+    &lt;div&gt;&lt;!--!--&gt;&lt;p&gt;Ort der Veranstaltung: &lt;/p&gt;&#xD;
+        &lt;!--!--&gt;&lt;input class="form-control" _bl_7=""&gt;&lt;/div&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+&lt;div&gt;&lt;!--!--&gt;&lt;div&gt;&lt;h3&gt;Eventprozesse&lt;/h3&gt;&lt;/div&gt;&#xD;
+    &lt;div&gt;&lt;table&gt;&lt;!--!--&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Ausf�hren&lt;/th&gt;&#xD;
+                    &lt;th&gt;Prozessname&lt;/th&gt;&#xD;
+                    &lt;th&gt;Beschreibung&lt;/th&gt;&#xD;
+                    &lt;th&gt;Platzhalter&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&#xD;
+            &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;button&gt;&lt;!--!--&gt;Ausf�hren&lt;/button&gt;&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;Einladungen vorbereiten&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;Automatischer Versandt von E-Mail Einladungen&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;!--!--&gt;&lt;input class="form-control" _bl_8=""&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;button&gt;&lt;!--!--&gt;Ausf�hren&lt;/button&gt;&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;Anmeldeschluss&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;Aktiviert den Anmeldeschluss zu einem Zeitpunkt (Kann fr�her ausgel�st werden)&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;!--!--&gt;&lt;input class="form-control" _bl_9=""&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;button&gt;&lt;!--!--&gt;Ausf�hren&lt;/button&gt;&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;Dankessagung&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;td&gt;versenden von Dankes-e-Mails&lt;/td&gt;&lt;!--!--&gt;&#xD;
+                        &lt;!--!--&gt;&lt;input class="form-control" _bl_10=""&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+	&lt;div&gt;&lt;button&gt;&lt;!--!--&gt;Prozessschritt hinzuf�gen&lt;/button&gt;&lt;!--!--&gt; &#xD;
+		&lt;button&gt;&lt;!--!--&gt;�nderungen speichern&lt;/button&gt;&lt;!--!--&gt;&#xD;
+		&lt;button&gt;&lt;!--!--&gt;�nderungen verwerfen&lt;/button&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+	&lt;div&gt;&lt;!--!--&gt;&lt;a href="/processSuite"&gt;&lt;!--!--&gt;&#xD;
+			Neuen Prozess hinzuf�gen&#xD;
+		&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/article&gt;&lt;/main&gt;&lt;/div&gt;&lt;!--!--&gt;&#xD;
+        &lt;!--!--&gt;&lt;/div&gt;&#xD;
+    &lt;div id="blazor-error-ui"&gt;&#xD;
+        An unhandled error has occurred.&#xD;
+        &lt;a href="" class="reload"&gt;Reload&lt;/a&gt;&#xD;
+        &lt;a class="dismiss"&gt;??&lt;/a&gt;&#xD;
+    &lt;/div&gt;&#xD;
+    &lt;script src="_framework/blazor.webassembly.js"&gt;&lt;/script&gt;&#xD;
+&lt;!-- Visual Studio Browser Link --&gt;&#xD;
+&lt;script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestid="95210512929848f6a53f2d3bf86b5130" data-requestmappingfromserver="false" data-connecturl="http://localhost:51227/47502e87e28244a39a8cf6727f2cfd26/browserLink"&gt;&lt;/script&gt;&#xD;
+&lt;!-- End Browser Link --&gt;&#xD;
+&lt;script src="/_framework/aspnetcore-browser-refresh.js"&gt;&lt;/script&gt;&#xD;
+&lt;/body&gt;&lt;/html&gt;&#xD;
+[xUnit.net 00:00:26.15]   Finished:    Prototype_Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
