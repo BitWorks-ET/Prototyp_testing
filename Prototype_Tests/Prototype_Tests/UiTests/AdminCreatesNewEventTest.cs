@@ -11,6 +11,8 @@ namespace Prototype_Tests.UiTests
 {
     public class AdminCreatesNewEventTest
         // DIES IST EIN TESTKOMMENTAR IM FEATURE BRANCH UND DER WORKLOAD
+
+        // HIER WURDE ARBEIT IM FEATURE BRANCH GETAN UND JO
     {
         [Fact]
         public async Task Admin_Can_Create_New_Event_With_Testort()
