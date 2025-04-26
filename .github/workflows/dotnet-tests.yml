@@ -1,34 +1,45 @@
-name: Generate Test Report and Deploy
+name: Test and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
 
 jobs:
-  test-and-deploy:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
-    - name: Install ReportGenerator
-      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+    - name: Restore Dependencies
+      run: dotnet restore
 
-    - name: Run Tests and Generate .trx
-      run: dotnet test --logger "trx;LogFileName=test_results.trx"
+    - name: Install Playwright Browsers
+      run: |
+        dotnet tool install --global Microsoft.Playwright.CLI
+        playwright install
 
-    - name: Generate HTML Report
-      run: reportgenerator -reports:"**/test_results.trx" -targetdir:"test-reports" -reporttypes:Html
+    - name: Build
+      run: dotnet build --no-restore --configuration Release
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Run Tests
+      run: dotnet test --no-build --logger "trx"
+
+    - name: Generate HTML Test Report
+      run: |
+        dotnet tool install --global dotnet-reportgenerator-globaltool
+        reportgenerator -reports:**/TestResults/*.trx -targetdir:TestReport -reporttypes:Html
+
+    - name: Deploy Test Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./test-reports
-        publish_branch: gh-pages
+        publish_dir: ./TestReport
