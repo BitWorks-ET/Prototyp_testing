@@ -13,6 +13,9 @@ namespace Prototype_Tests.UiTests
         // DIES IST EIN TESTKOMMENTAR IM FEATURE BRANCH UND DER WORKLOAD
 
         // HIER WURDE ARBEIT IM FEATURE BRANCH GETAN UND JO
+
+        // HIER IST EIN KONFLIKTKOMMENTAR IM FEATURE BRANCH 
+
     {
         [Fact]
         public async Task Admin_Can_Create_New_Event_With_Testort()
